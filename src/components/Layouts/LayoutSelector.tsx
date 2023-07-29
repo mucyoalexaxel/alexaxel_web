@@ -22,7 +22,7 @@ const LayoutSelector = ({ breakpoint, children }: LayoutSelectorProps) => {
     }
   > = {
     [BREAKPOINT_BASE]: { container: MobileLayout },
-    [BREAKPOINT_SM]: { container: MobileLayout },
+    [BREAKPOINT_SM]: { container: TabletLayout },
     [BREAKPOINT_MD]: { container: TabletLayout },
     [BREAKPOINT_LG]: { container: DesktopLayout },
     [BREAKPOINT_XL]: { container: DesktopLayout },
