@@ -14,3 +14,15 @@
     /* box-shadow: 1px 1px 3px 0px rgba(59, 255, 24, 0.20); */
     /* backdrop-filter: blur(7.5px); */
 }
+
+.branchDot {
+    background: linear-gradient(180deg, #3BFF18 0%, rgba(59, 255, 24, 0.85) 20.83%, rgba(59, 255, 24, 0.63) 52.60%, rgba(59, 255, 24, 0.22) 77.60%, rgba(59, 255, 24, 0.10) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.branchLabel {
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(59, 255, 24, 0.30) 0%, rgba(59, 255, 24, 0.18) 51.56%, rgba(59, 255, 24, 0.10) 100%);
+    backdrop-filter: blur(2px);
+    /* flex-shrink: 0; */
+}

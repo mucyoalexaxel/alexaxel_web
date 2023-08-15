@@ -25,6 +25,7 @@ module.exports = {
       gridTemplateColumns: {
         '12': 'repeat(12, minmax(0, 80px))',
         '14': 'repeat(14, minmax(0, 80px))',
+        'branchSelector': 'repeat(12, 16px)',
         'svgBlog': 'repeat(16, 30px)',
       },gridTemplateRows: {
         'sectionRow': 'repeat(4, 100vh)',
