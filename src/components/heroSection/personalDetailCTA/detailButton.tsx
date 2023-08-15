@@ -155,7 +155,7 @@ export default function DetailButton() {
       >
         <User3DIcon className="relative z-10" />
       </FloatingButton>
-      <BlobUserIcon className="fixed bottom-0 right-0 z-0 blur-md" />
+      <BlobUserIcon className="fixed bottom-3 right-9 z-0 blur-md" />
     </div>
   );
 }
