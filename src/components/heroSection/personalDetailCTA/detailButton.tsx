@@ -112,7 +112,7 @@ export default function DetailButton() {
 
   // Remember to Blur The Button
   return (
-    <div className="fixed bottom-0 right-0">
+    <div className="hidden md:inline-block fixed bottom-0 right-0">
       {/* @mucyoalexaxel Replace this with an animated popup Modal */}
       {/* <IconContainer
         ref={containerRef}
@@ -155,7 +155,7 @@ export default function DetailButton() {
       >
         <User3DIcon className="relative z-10" />
       </FloatingButton>
-      <BlobUserIcon className="fixed bottom-3 right-9 z-0 blur-md" />
+      <BlobUserIcon className="fixed bottom-3 right-[20px] z-0 blur-md" />
     </div>
   );
 }

@@ -26,3 +26,37 @@
     backdrop-filter: blur(2px);
     /* flex-shrink: 0; */
 }
+
+.navbar_vertical {
+    writing-mode: vertical-lr;
+    transition: all .1s;
+    opacity: .5;
+    border-right: 1px solid transparent;
+}
+
+
+.hideScrollBar {
+    /* Internet Explorer 10+ */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+
+}
+
+.hideScrollBar::-webkit-scrollbar {
+    /* Safari and Chrome */
+    display: none;
+}
+
+.slider p {
+    position: relative;
+    margin: 0px;
+    font-size: 100px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+.slider p:nth-of-type(2) {
+    /* position: absolute; */
+    /* left: 100%; */
+}

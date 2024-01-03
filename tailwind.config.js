@@ -1,17 +1,24 @@
+import { nextui } from "@nextui-org/react";
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  mode: 'jit',
+  mode: "jit",
   theme: {
     extend: {
       colors: {
         primary: "#3BFF18",
-        secondary: "#FF0046",
-        "web-black": "#1E1E1E",
+        "primary-goldish": "#C3F00D",
+        secondary: "#0076FF",
+        "navbar-black": "#080808",
+        "web-dark": "#111",
+        "web-black": "#2A272A",
         "apple-light": "#DFF8D5",
         "icon-light": "#F1FDEB",
       },
@@ -22,15 +29,20 @@ module.exports = {
         lg: "1024px",
         xl: "1280px",
       },
+      gridColumn: {
+        "span-13": "span 13 / span 13",
+        "span-14": "span 14 / span 14",
+      },
       gridTemplateColumns: {
-        '12': 'repeat(12, minmax(0, 80px))',
-        '14': 'repeat(14, minmax(0, 80px))',
-        'branchSelector': 'repeat(12, 16px)',
-        'svgBlog': 'repeat(16, 30px)',
-      },gridTemplateRows: {
-        'sectionRow': 'repeat(4, 100vh)',
-        'svgBlog': 'repeat(12, 30px)',
-        'svgBlogMobile': 'repeat(6, 30px)',
+        12: "repeat(12, minmax(0, 80px))",
+        14: "repeat(14, minmax(0, 80px))",
+        branchSelector: "repeat(12, 16px)",
+        svgBlog: "repeat(16, 30px)",
+      },
+      gridTemplateRows: {
+        sectionRow: "repeat(4, 100vh)",
+        svgBlog: "repeat(12, 30px)",
+        svgBlogMobile: "repeat(6, 30px)",
       },
       fontFamily: {
         Inter: ['"Inter"', '"system-ui"', '"sans-serif"'],
@@ -46,5 +58,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 };

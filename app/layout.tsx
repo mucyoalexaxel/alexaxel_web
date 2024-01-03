@@ -1,9 +1,10 @@
 "use client";
 
 import DottedGrid from "@assets/webIcons/dottedGrid.svg";
-import { DetailButton, Header } from "@components/heroSection";
+import { DetailButton } from "@components/heroSection";
 import "../styles/global.css";
 import { Providers } from "./providers";
+import { NavBar, Header } from "@components/Header";
 
 export default function RootLayout({
   children,
@@ -11,19 +12,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-web-black">
+    <html lang="en" className="dark">
+      <body className="bg-[#111]">
         <Providers>
-          <div className="snap-y snap-mandatory overflow-y-scroll h-[100dvh] w-full grid justify-items-center bg-web-black">
-            <div className="w-full md:w-[90%] xl:w-4/5 grid grid-cols-14 relative px-5 md:px-0">
-              <Header sectionName={""} />
-              <div className="w-full col-span-full flex flex-col gap-1">
-                {/* @mucyoalexaxel Remember to Remove gap-1 in the syles above */}
-                {children}
-              </div>
-              <DottedGrid className="hidden md:block fixed top-0 backdrop-blur-sm" />
-              <DottedGrid className="fixed bottom-0 backdrop-blur-sm z-10" />
-              <DetailButton />
+          <div className="w-full mx-auto 2xl:max-w-[65dvw] scroll-smooth flex">
+            <NavBar sectionName="NavBar" />
+            <div className="flex flex-col relative">
+              {/* <Header /> */}
+              <div className="w-full relative">{children}</div>
             </div>
           </div>
         </Providers>

@@ -6,7 +6,7 @@ export const FloatingButton = styled(animated.div, {
     height: "60px",
     borderRadius: "50%",
     bottom: "20px",
-    right: "40px",
+    right: "20px",
     border: "none",
     position: "fixed",
     backgroundClip: "content-box",
