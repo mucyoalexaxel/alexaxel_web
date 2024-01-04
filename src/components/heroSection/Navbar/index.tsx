@@ -4,30 +4,24 @@ import { ReactNode } from "react";
 export interface NavBarIconContainerProps {
   url: string;
   getNavIcon: () => ReactNode;
-  isLeft?: boolean;
-  isRight?: boolean;
+  navText: string;
   isActive: boolean | false;
 }
 
 export const NavBar = ({
   url,
-  isLeft,
-  isRight,
+  navText,
+
   getNavIcon,
   isActive,
 }: NavBarIconContainerProps) => {
   return (
     <Link
       href={url}
-      className="group flex justify-items-center items-center flex-col"
+      className="group h-[100px] w-full flex flex-shrink-0 items-center justify-center navbar_vertical hover:opacity-100 hover:border-r-primary-goldish hover:bg-web-black hover:bg-opacity-20"
     >
-      <span
-        className={`h-2 w-full group-hover:bg-gradient-to-b group-hover:from-transparent group-hover:to-primary group-hover:rounded-tl-lg group-hover:filter group-hover:blur-[2px] ${
-          isActive &&
-          "bg-gradient-to-b from-transparent to-primary filter blur-[2px] "
-        } ${isLeft && "rounded-tl-lg"} ${isRight && "rounded-tr-lg"}`}
-      />
-      {getNavIcon()}
+      <span className="group-hover:text-primary-white">{navText}</span>
+      {/* <span className="mb-1">{getNavIcon()}</span> */}
     </Link>
   );
 };

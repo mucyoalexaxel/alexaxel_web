@@ -8,12 +8,25 @@ export default function SectionLayout({
   children,
 }: SectionLayoutProps) {
   return (
-    <div className="h-[100dvh] snap-start grid place-items-center relative">
-      <div
-        className={`${sectionName} w-full h-[70%] md:h-fit flex flex-col md:grid grid-cols-14 md:place-items-center z-0 my-10 lg:my-0`}
-      >
-        {children}
-      </div>
+    <div
+      className={`${sectionName} h-max w-full flex flex-col sm:grid grid-cols-12 sm:place-items-center z-0 mb-10 p-10`}
+      id={sectionName}
+    >
+      {children}
+    </div>
+  );
+}
+
+export function HeroLayout({
+  sectionName,
+  children,
+}: SectionLayoutProps) {
+  return (
+    <div
+      className={`${sectionName} min-h-[100dvh] w-full sm:w-4/5 mx-auto flex flex-col justify-center p-5 relative`}
+      id={sectionName}
+    >
+      {children}
     </div>
   );
 }
