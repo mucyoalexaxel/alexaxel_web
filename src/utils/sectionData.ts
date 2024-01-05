@@ -1,10 +1,12 @@
 export const portfolioData = {
   heroSection: {
-    title: "",
-    subtitle: "",
-    CTAText: "",
+    title: "Hi, I&apos; Alex.",
+    roles: ["Full Stack Developer", "Freelancer"],
+    CTAText: "say hi",
     imgUrl: "",
-    bgText: "",
+    text1: "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
+    text2: "Delivering Quality Software to every place you want",
+    
   },
 
   develop: {
@@ -34,24 +36,9 @@ export const portfolioData = {
     subtitle: "Experience",
     textData: [
       {
-        title: "exp1",
+        title: "",
         textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
+          "",
       },
     ],
     subtitleCaption: "",
@@ -62,24 +49,9 @@ export const portfolioData = {
     subtitle: "Projects",
     textData: [
       {
-        title: "exp1",
+        title: "",
         textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
-      },
-      {
-        title: "exp1",
-        textContent:
-          "I delight in designing captivating UI and sturdy backend solutions. My core dedication is to transform ideas into tech-driven realities. Each challenge for me is a chance to learn and grow.",
+          "",
       },
     ],
     subtitleCaption: "",
@@ -88,6 +60,7 @@ export const portfolioData = {
 };
 
 
-// I&apos;m a <span></span> Driven by the mission to
-// deliver software that truly serves your needs, I leverage modern
-// technologies and industry best practices.
+// I&apos;m a Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.
+
+// Delivering Quality Software to every place you want
+// Each application I create is a fusion of functionality, efficiency, and user-centric design. Together, let&apos;s transform your vision into a digital reality that captivates users and drives business growth

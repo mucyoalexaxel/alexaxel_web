@@ -5,6 +5,7 @@ import { DetailButton } from "@components/heroSection";
 import "../styles/global.css";
 import { Providers } from "./providers";
 import { NavBar, Header } from "@components/Header";
+import Footer from "@components/Footer";
 
 export default function RootLayout({
   children,
@@ -20,6 +21,7 @@ export default function RootLayout({
             <div className="flex flex-col relative">
               {/* <Header /> */}
               <div className="w-full relative">{children}</div>
+              <Footer />
             </div>
           </div>
         </Providers>
