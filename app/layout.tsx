@@ -16,9 +16,9 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className="bg-[#111]">
         <Providers>
-          <div className="w-full mx-auto 2xl:max-w-[65dvw] scroll-smooth flex">
+          <div className="w-full mx-auto 2xl:max-w-[80dvw] scroll-smooth flex">
             <NavBar sectionName="NavBar" />
-            <div className="flex flex-col relative">
+            <div className="flex flex-col relative w-full flex-wrap">
               {/* <Header /> */}
               <div className="w-full relative">{children}</div>
               <Footer />
