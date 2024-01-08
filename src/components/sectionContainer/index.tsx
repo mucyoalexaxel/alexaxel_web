@@ -9,7 +9,7 @@ export default function SectionLayout({
 }: SectionLayoutProps) {
   return (
     <div
-      className={`${sectionName} h-max w-full flex flex-col sm:grid grid-cols-12 sm:place-items-center z-0 mb-10 py-10 px-5`}
+      className={`${sectionName} h-max w-full flex flex-col md:flex-row md:justify-between z-0 py-10 px-5 sm:w-4/5 sm:mx-auto sm:px-0 sectionDivider`}
       id={sectionName}
     >
       {children}

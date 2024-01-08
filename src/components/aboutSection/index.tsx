@@ -1,9 +1,9 @@
 import SectionLayout from "@components/sectionContainer";
-import { SelectedBranch } from "./selectedBranch";
+import { SectionSelector } from "./sectionSelector";
 import {
-  SelectedBranchContent,
+  SectionWrapper,
   SelectedBranchSubContent,
-} from "./selectedBranchContent";
+} from "./SectionWrapper";
 import { portfolioData } from "@utils/sectionData";
 
 const { develop, aboutBranch, experienceBranch, projectsBranch } =
@@ -14,30 +14,32 @@ const branchData = [aboutBranch, experienceBranch, projectsBranch];
 export const AboutSection = ({ sectionName }: { sectionName: string }) => {
   return (
     <SectionLayout sectionName={sectionName}>
-      <div className="w-full flex flex-col border-primary gap-2 md:col-span-6 lg:col-span-5">
-        <div className="flex flex-col gap-2">
-          <SelectedBranch branchName={develop.branchTitle} isSelectedBranch />
-          <SelectedBranchContent>
-            <div className="flex flex-col gap-2">
-              <p className="text-apple-light font-medium text-sm tracking-wider">
+      <SectionWrapper>
+        <div className="w-full flex flex-col">
+          <div className="flex flex-col">
+            <SectionSelector
+              branchName={develop.branchTitle}
+              isSelectedBranch
+            />
+            <div className="flex flex-col gap-2 px-2">
+              <p className="text-white font-semibold text-lg tracking-wider leading-snug">
                 {develop.textContent}
               </p>
-              <span className="text-[#3BFF18A1] text-xs tracking-wider">
+              <span className="text-primary-goldish text-sm tracking-wider font-light">
                 ~ {develop.subtitleCaption}
               </span>
             </div>
-          </SelectedBranchContent>
-        </div>
+          </div>
 
-        <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
           {branchData.map((item, index) => (
             <div className="" key={index}>
-              <SelectedBranch
+              <SectionSelector
                 branchName={item.branchTitle}
                 isCheckoutStatement
               />
               <SelectedBranchContent>
-                <SelectedBranch
+                <SectionSelector
                   branchName={`feature/${item.branchTitle}`}
                   isSelectedBranch
                 />
@@ -62,8 +64,9 @@ export const AboutSection = ({ sectionName }: { sectionName: string }) => {
               </SelectedBranchContent>
             </div>
           ))}
+        </div> */}
         </div>
-      </div>
+      </SectionWrapper>
     </SectionLayout>
   );
 };

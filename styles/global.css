@@ -5,6 +5,7 @@
 .body {
     --goldish: #C3F00D;
     --white: #fdfdfd;
+    --web-black: #000;
     --background: var(--white);
     --accent: var(--goldish);
 }
@@ -30,8 +31,8 @@
 .branchLabel {
     border-radius: 50px;
     background: linear-gradient(180deg, rgba(59, 255, 24, 0.30) 0%, rgba(59, 255, 24, 0.18) 51.56%, rgba(59, 255, 24, 0.10) 100%);
-    backdrop-filter: blur(2px);
-    /* flex-shrink: 0; */
+    backdrop-filter: blur(4px);
+    flex-shrink: 0;
 }
 
 .navbar_vertical {
@@ -86,7 +87,7 @@
     backdrop-filter: blur(3px);
 }
 
-.footerBG::before{
+.footerBG::before {
     display: block;
     content: "";
     position: absolute;
@@ -96,4 +97,20 @@
     height: 1px;
     background: var(--goldish);
     opacity: .2;
+}
+
+.sectionDivider::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--goldish);
+    opacity: .2;
+}
+
+.sectionDivider:nth-child(1) {
+    background: var(--web-black);
 }
