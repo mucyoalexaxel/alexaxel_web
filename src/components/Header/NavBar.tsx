@@ -28,7 +28,7 @@ export default function Navbar({ sectionName }: { sectionName: string }) {
   const { scrollYProgress } = useScroll();
 
   return (
-    <nav className="bg-black flex items-center h-[100dvh] z-20 flex-col overflow-y-scroll sticky left-0 top-0 min-w-[55px] hideScrollBar">
+    <nav className="bg-black flex items-center h-[100dvh] z-20 flex-col overflow-y-scroll sticky left-0 top-0 bottom-0 min-w-[55px] hideScrollBar">
       {/* <ThemeSwitcher /> */}
       <Link
         href={"/"}

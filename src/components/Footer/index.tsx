@@ -55,7 +55,7 @@ export default function Footer() {
         </motion.div>
       </div>
       <span className="w-full text-center text-xs text-gray-400 tracking-widest font-medium">
-        &copy; Alex Axel Mucyo <span>{getYear()}</span>
+        &copy;<span>{getYear()}</span> Alex Axel Mucyo 
       </span>
     </motion.div>
   );

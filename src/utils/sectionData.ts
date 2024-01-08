@@ -1,11 +1,18 @@
 export const portfolioData = {
   heroSection: {
-    title: "Hi, I&apos; Alex.",
+    title: "Hi, I'm Alex.",
     roles: ["Full Stack Developer", "Freelancer"],
     CTAText: "say hi",
     imgUrl: "",
     text1: "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
     text2: "Delivering Quality Software to every place you want",
+    
+  },
+  
+  preAbout: {
+    text1: "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
+    text2: "Delivering Quality Software to every place you want",
+    text3: "I am Driven by the mission to deliver quality software that truly serves your needs.",
     
   },
 

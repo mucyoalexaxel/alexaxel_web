@@ -16,6 +16,7 @@ module.exports = {
         primary: "#3BFF18",
         "primary-goldish": "#C3F00D",
         secondary: "#0076FF",
+        white: "#fdfdfd",
         "navbar-black": "#080808",
         "web-dark": "#111",
         "web-black": "#2A272A",
@@ -23,7 +24,7 @@ module.exports = {
         "icon-light": "#F1FDEB",
       },
       screens: {
-        xsm: "420px",
+        xsm: "370px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
