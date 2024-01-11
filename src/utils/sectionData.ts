@@ -4,16 +4,17 @@ export const portfolioData = {
     roles: ["Full Stack Developer", "Freelancer"],
     CTAText: "say hi",
     imgUrl: "",
-    text1: "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
+    text1:
+      "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
     text2: "Delivering Quality Software to every place you want",
-    
   },
-  
+
   preAbout: {
-    text1: "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
+    text1:
+      "I am Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.",
     text2: "Delivering Quality Software to every place you want",
-    text3: "I am Driven by the mission to deliver quality software that truly serves your needs.",
-    
+    text3:
+      "I am Driven by the mission to deliver quality software that truly serves your needs.",
   },
 
   develop: {
@@ -37,6 +38,42 @@ export const portfolioData = {
     ],
     subtitleCaption: "",
     imgUrl: "",
+    skills: [
+      {
+        title: "Programming Languages",
+        skill_items: [
+          "JavaScript (ES6)",
+          "TypeScript",
+          "GraphQL",
+          "CSS/Sass",
+          "Python",
+        ],
+      },
+      {
+        title: "Libraries & Frameworks",
+        skill_items: [
+          "Next.js",
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "Tailwind CSS",
+          "Apollo Client",
+        ],
+      },
+      {
+        title: "Tools & Platforms",
+        skill_items: [
+          "Git",
+          "Webpack",
+          "Vercel",
+          "Docker",
+          "Firebase",
+          "Hasura",
+          "Figma",
+          "Photoshop",
+        ],
+      },
+    ],
   },
   experienceBranch: {
     branchTitle: "experience",
@@ -44,8 +81,7 @@ export const portfolioData = {
     textData: [
       {
         title: "",
-        textContent:
-          "",
+        textContent: "",
       },
     ],
     subtitleCaption: "",
@@ -57,15 +93,13 @@ export const portfolioData = {
     textData: [
       {
         title: "",
-        textContent:
-          "",
+        textContent: "",
       },
     ],
     subtitleCaption: "",
     imgUrl: "",
   },
 };
-
 
 // I&apos;m a Driven by the mission to deliver software that truly serves your needs, I leverage modern technologies and industry best practices.
 
