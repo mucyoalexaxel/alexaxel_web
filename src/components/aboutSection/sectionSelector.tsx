@@ -12,8 +12,8 @@ export const SectionSelector = ({
   branchName,
 }: SelectedBranchProps) => {
   return (
-    <section className="flex gap-2 items-center my-5">
-      {isSelectedBranch ? (
+    <section className="flex gap-2 items-center">
+      {/* {isSelectedBranch ? (
         <div className="branchDot h-3 w-3 rounded-[50%]" />
       ) : null}
       {isCheckoutStatement && (
@@ -23,7 +23,7 @@ export const SectionSelector = ({
           weight="bold"
           className="text-primary-goldish col-span-1 place-self-center font-thin mb-3"
         />
-      )}
+      )} */}
 
       <div
         className={`${

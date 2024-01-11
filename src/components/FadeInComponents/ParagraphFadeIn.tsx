@@ -15,15 +15,14 @@ export default function ParagraphFadeIn({ paragraph }: { paragraph: string }) {
 
   const sectionVariants = {
     initial: {
-      opacity: 0,
       scale: 0.8,
     },
     visible: {
-      opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.8,
-        delay: 0.4,
+        // duration: 0.8,
+        delay: 0.1,
+        type: "keyframes",
       },
     },
     onExit: {
@@ -37,10 +36,11 @@ export default function ParagraphFadeIn({ paragraph }: { paragraph: string }) {
     <motion.p
       ref={container}
       className="flex flex-wrap text-2xl xsm:text-3xl text-center capitalize tracking-wide leading-snug font-medium"
+      // style={{ opacity, scale: scrollYProgress }}
       style={{ opacity }}
-      // variants={sectionVariants}
-      // initial="initial"
-      // whileInView="visible"
+      variants={sectionVariants}
+      initial="initial"
+      whileInView="visible"
       // exit="onExit"
     >
       {paragraph}
