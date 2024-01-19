@@ -1,6 +1,5 @@
 import { ExpSectionLayout } from "@components/sectionContainer";
-import { SectionSelector, SectionWrapper } from "@components/sectionSelector";
-// import { SectionSelector } from "@components/";
+import { SectionSelector } from "@components/sectionSelector";
 import { portfolioData } from "@utils/sectionData";
 
 export const ExperienceSection = ({ sectionName }: { sectionName: string }) => {
@@ -14,12 +13,15 @@ export const ExperienceSection = ({ sectionName }: { sectionName: string }) => {
       />
       <div className="ExperienceWrapper flex flex-col gap-2 mt-5">
         {experiences.map((experience, idx) => (
-          <div className="flex flex-col gap-2 my-5" key={idx}>
-            <div className="flex flex-col gap-2 mb-1">
+          <div
+            className="flex flex-col gap-2 py-10 expSectionBorder"
+            key={idx}
+          >
+            <div className="flex flex-col gap-1 mb-1">
               <ExpHeading textContent={experience.jobTitle} />
               <ExpSubHeading textContent={experience.company} />
 
-              <p className="flex gap-1 text-white/60 font-light text-sm">
+              <p className="flex gap-2 sm:gap-1 text-white/60 font-light text-sm">
                 <span>{experience.startMonth}</span>
                 <span>{experience.startYear}</span>
                 <span>-</span>
@@ -28,13 +30,16 @@ export const ExperienceSection = ({ sectionName }: { sectionName: string }) => {
               </p>
             </div>
 
-            <ul className="flex flex-col gap-1">
+            <ol className="flex flex-col gap-1">
               {experience.bullets.map((bulletText, index) => (
-                <li className="" key={index}>
+                <li
+                  className="text-white/90 text-lg font-light capitalize tracking-wide leading-relaxed mb-1"
+                  key={index}
+                >
                   {bulletText}
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         ))}
       </div>

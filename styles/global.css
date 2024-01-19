@@ -114,3 +114,13 @@
 .sectionDivider:nth-child(1) {
     background: var(--web-black);
 }
+
+
+.expSectionBorder {
+    border-bottom: 1px solid rgb(195 240 13 / 0.15);
+}
+
+.expSectionBorder:last-child {
+    border-bottom: 0px;
+    /* border-bottom-color: transparent; */
+}
