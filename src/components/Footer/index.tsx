@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   const getYear = () => new Date().getFullYear();
   return (
-    <motion.div className="w-full flex flex-col px-5 pt-10 pb-3 bg-black gap-5">
+    <motion.div className="w-full flex flex-col px-5 pt-10 pb-3 bg-black gap-5 xl:rounded-t-2xl">
       <div className="flex justify-between items-center">
         <motion.p className="flex-shrink-0 flex items-center justify-center bg-web-dark rounded p-3">
           <span className="text-[#F3FCEE] text-base font-bold capitalize tracking-widest">
