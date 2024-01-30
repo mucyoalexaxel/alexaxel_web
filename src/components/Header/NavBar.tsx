@@ -17,7 +17,7 @@ const navBarItems = [
   { Icon: Kanban, url: "/my-approach", navText: "Exp." },
   { Icon: Desktop, url: "#portfolio", navText: "Projects" },
   { Icon: HandWaving, url: "#contact-me", navText: "Contact" },
-  { Icon: ReadCvLogo, url: "/resume", navText: "Resume" },
+  { Icon: ReadCvLogo, url: "resume.pdf", navText: "Resume" },
 ];
 // @mucyoalexaxel make a model component for your online resume and link it here.
 // @mucyoalexaxel here is inspiration https://www.youtube.com/watch?v=n8lbgOB87Bg&list=TLPQMDMwMTIwMjSikmCH3pLwhw&index=2&pp=gAQBiAQB
