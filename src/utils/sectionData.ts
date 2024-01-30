@@ -140,14 +140,40 @@ export const portfolioData = {
   projectsBranch: {
     branchTitle: "projects",
     subtitle: "Projects",
-    textData: [
+    projects: [
       {
-        title: "",
-        textContent: "",
+        projectName: "BAG App",
+        projectCaption:
+          "An online platform that connects talents to employers through online programs.",
+        projectUrl: "https://www.bag.work/",
+        projectImgUrl: "https://example.com/images/bag-app.png",
+        technologies: ["Typescript", "Next.js", "Tailwind", "Node.js"],
+      },
+      {
+        projectName: "INI Design Studio",
+        projectCaption:
+          "A website showcasing the portfolio of INI Design Studio.",
+        projectUrl: "https://ingabonimanzidesign.com/",
+        projectImgUrl: "https://example.com/images/ini-design-studio.png",
+        technologies: ["Typescript", "Next.js", "Saas"],
+      },
+      {
+        projectName: "Top 100 Movies API",
+        projectCaption:
+          "An API providing information about the top 100 movies.",
+        projectUrl: "https://example.com/top-movies-api",
+        projectImgUrl: "https://example.com/images/top-movies-api.png",
+        technologies: ["Typescript", "Nuxt.js", "GraphQL", "Postgres"],
+      },
+      {
+        projectName: "The MCY",
+        projectCaption:
+          "My personal portfolio showcasing my projects and skills.",
+        projectUrl: "https://alexaxel.com",
+        projectImgUrl: "https://example.com/images/my-portfolio.png",
+        technologies: ["Typescript", "Next.js", "Tailwind CSS"],
       },
     ],
-    subtitleCaption: "",
-    imgUrl: "",
   },
 };
 

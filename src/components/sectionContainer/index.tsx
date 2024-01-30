@@ -17,13 +17,27 @@ export default function SectionLayout({
   );
 }
 
+export function ProjectSectionLayout({
+  sectionName,
+  children,
+}: SectionLayoutProps) {
+  return (
+    <div
+      className={`${sectionName} h-max w-full flex flex-col gap-10 z-0 py-10 px-5 sm:w-4/5 sm:mx-auto sm:px-0 sectionDivider`}
+      id={sectionName}
+    >
+      {children}
+    </div>
+  );
+}
+
 export function ExpSectionLayout({
   sectionName,
   children,
 }: SectionLayoutProps) {
   return (
     <div
-      className={`${sectionName} h-max w-full flex flex-col z-0 py-10 px-5 sm:w-4/5 sm:mx-auto sm:px-0 sectionDivider`}
+      className={`${sectionName} h-max w-full flex flex-col z-0 pb-10 px-5 sm:w-4/5 sm:mx-auto sm:px-0 sectionDivider`}
       id={sectionName}
     >
       {children}
