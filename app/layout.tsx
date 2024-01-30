@@ -1,12 +1,12 @@
-import "../styles/global.css";
+"use client";
 
-export const metadata = {
-  title: "Alex Axel Mucyo",
-  description:
-    "Explore the portfolio of Alex Axel Mucyo, an accomplished Full Stack TypeScript Developer with experience in Next.js, React.js, Node.js, and more. Discover his projects, professional experience, and skills.",
-  keywords:
-    "Alex Axel Mucyo, Full Stack TypeScript Developer, Full Stack Software Developer, Software Engineer, Frontend Developer, Backend Developer, Next.js, React.js, Node.js, React Native, Tailwind CSS, Redux Toolkit, React Hooks, Express, Sequelize, Auth.js, Prisma, GraphQL, RESTful API, API development, Hasura, Codegen, PostgreSQL, MongoDB, SQL, Database Design, Git, Agile, Scrum, Jira, Trello, Pivotal Tracker, Figma, Webflow, Jest, Mocha, Cypress, Travis CI, GitHub Actions, CircleCI, Performance Optimization, Leadership, Teamwork, Problem-solving, Time management, Adaptability, Critical thinking, Creativity, Emotional intelligence",
-};
+import Footer from "@components/Footer";
+import { NavBar } from "@components/Header";
+import { AnimatePresence } from "framer-motion";
+import "../styles/global.css";
+import { Providers } from "./providers";
+
+
 
 export default function RootLayout({
   children,
@@ -14,8 +14,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="dark">
+      <body className="bg-[#111]">
+        <Providers>
+          <AnimatePresence initial={false}>
+            <div className="w-full scroll-smooth flex overflow-x-clip relative">
+              <NavBar sectionName="NavBar" />
+              <div className="flex flex-col relative w-full flex-wrap mx-auto 2xl:max-w-[80dvw]">
+                <div className="w-full relative">{children}</div>
+                <Footer />
+              </div>
+            </div>
+          </AnimatePresence>
+        </Providers>
+      </body>
     </html>
   );
 }

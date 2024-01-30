@@ -1,10 +1,13 @@
-import CommingSoonPage from '@components/CommingSoonPage'
-import { Inter } from 'next/font/google'
+import type { Metadata } from "next";
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata: Metadata = {
+  title: "HOME | THE MCY",
+  description: "",
+};
+
+import HomePage from "@components/homepage";
+
 
 export default function Home() {
-  return (
-    <CommingSoonPage />
-  )
+  return <HomePage />;
 }
