@@ -30,6 +30,7 @@
       "@config/*": ["src/config/*"],
       "@helpers/*": ["src/helpers/*"],
       "@utils/*": ["src/utils/*"],
+      "@lib/*": ["src/lib/*"],
       "@routes/*": ["src/routes/*"]
     }
   },

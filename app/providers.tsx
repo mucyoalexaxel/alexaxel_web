@@ -1,14 +1,10 @@
-"use client";
-
-import { NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import ActiveSectionContextProvider from "@context/active-section-context";
+import ThemeContextProvider from "@context/theme-context";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="dark">
-        {children}
-      </NextThemesProvider>
-    </NextUIProvider>
+    <ThemeContextProvider>
+      <ActiveSectionContextProvider>{children}</ActiveSectionContextProvider>
+    </ThemeContextProvider>
   );
 }

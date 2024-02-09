@@ -24,7 +24,7 @@ export default function ProjectSection({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project, idx) => (
-          <div className="w-full h-fit bg-black rounded-lg" key={idx}>
+          <div className="w-full h-[360px] bg-black rounded-lg" key={idx}>
             <div className="relative w-full h-fit">
               <div className="absolute w-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 h-[160px] z-20 rounded-t-lg" />
               <img
