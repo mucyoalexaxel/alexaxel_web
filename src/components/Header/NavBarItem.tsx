@@ -11,7 +11,6 @@ export interface NavBarIconContainerProps {
 export const NavBar = ({
   url,
   navText,
-
   getNavIcon,
   isActive,
 }: NavBarIconContainerProps) => {

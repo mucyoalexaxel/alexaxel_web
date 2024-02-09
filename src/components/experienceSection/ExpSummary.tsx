@@ -43,7 +43,10 @@ export default function ExpSummary({
               </ol>
             </div>
           ))}
-        <a href="/resume.pdf" className="underline font-bold underline-offset-4 flex items-center gap-3 expSectionBorder">
+        <a
+          href="/resume.pdf"
+          className="underline font-bold underline-offset-4 flex gap-x-3 border-b border-b-[#c3f00d26] pb-10 pt-[10px]"
+        >
           View full resume
         </a>
       </div>

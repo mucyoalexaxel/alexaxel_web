@@ -6,4 +6,3 @@ export const SKILLS = "SkillsSection";
 export const PROJECTS = "ProjectSection";
 export const CONTACT_ME = "ContactMeSection";
 export const MY_APPROACH = "MY_ApproachSection";
-

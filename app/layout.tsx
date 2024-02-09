@@ -21,7 +21,7 @@ export default function RootLayout({
             <div className="w-full scroll-smooth flex overflow-x-clip relative">
               <NavBar sectionName="NavBar" />
               <div className="flex flex-col relative w-full flex-wrap mx-auto 2xl:max-w-[80dvw]">
-                <div className="w-full relative">{children}</div>
+                {children}
                 <Footer />
               </div>
             </div>
