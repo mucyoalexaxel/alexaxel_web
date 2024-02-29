@@ -2,7 +2,7 @@ repo_name: mucyoalexaxel/alexaxel_web
 report_id: df9000445f22e922971f97b30e25d158
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:32:48+00:00'
+timestamp: '2024-02-29T18:54:50+00:00'
 requested_by: mucyoalexaxel
 provider: github
 branch: main
@@ -53,7 +53,7 @@ tools:
   last_updated_by: Alex Axel Mucyo
   last_updated_on: 2023-04-01 01:33:10.000000000 Z
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 13.2.4
   open_source: true
